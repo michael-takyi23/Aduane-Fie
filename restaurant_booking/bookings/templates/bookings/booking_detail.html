@@ -1,0 +1,17 @@
+{% extends 'bookings/base.html' %}
+
+{% block title %}Booking Detail{% endblock %}
+
+{% block content %}
+<h2>Booking Detail</h2>
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">Booking for {{ booking.user.username }}</h5>
+        <p class="card-text">Table: {{ booking.table.number }}</p>
+        <p class="card-text">Date: {{ booking.date }}</p>
+        <p class="card-text">Time: {{ booking.time }}</p>
+        <p class="card-text">Guests: {{ booking.guests }}</p>
+        <a href="{% url 'cancel_booking' booking.id %}" class="btn btn-danger">Cancel Booking</a>
+    </div>
+</div>
+{% endblock %}
