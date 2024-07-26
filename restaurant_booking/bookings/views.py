@@ -17,7 +17,7 @@ def create_booking(request):
         if form.is_valid():
             booking = form.save(commit=False)
             booking.user = request.user
-            # Check for available tables
+            # Logic to assign a table based on availability
             available_table = Table.objects.filter(capacity__gte=booking.guests).exclude(
                 booking__date=booking.date,
                 booking__time=booking.time
