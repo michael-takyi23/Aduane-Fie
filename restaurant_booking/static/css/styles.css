@@ -10,7 +10,7 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
 /* Global Styles */
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #f8f9fa;
+    background-color: #fdfd04;
     color: #333;
     line-height: 1.6;
 }
@@ -42,7 +42,7 @@ body {
 
 /* Jumbotron Styles */
 .jumbotron {
-    background-color: #343a40;
+    background-color: #141415;
     color: #fff;
     padding: 60px 20px;
     text-align: center;
@@ -50,12 +50,12 @@ body {
 }
 
 .jumbotron h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 20px;
 }
 
 .jumbotron p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-bottom: 40px;
 }
 
@@ -94,7 +94,7 @@ form .form-group select {
 /* Button Styles */
 .btn-primary {
     background-color: #007bff;
-    border-color: #007bff;
+    border-color:  #8cf811;
 }
 
 .btn-primary:hover {
@@ -148,10 +148,10 @@ form .form-group select {
 
 /* Footer Styles */
 footer {
-    background-color: #343a40;
-    color: #fff;
+    background-color: #040404;
+    color: #8cf811;
     text-align: center;
     padding: 20px;
-    margin-top: 20px;
+    margin-top: 5px;
     border-radius: 0.3rem;
 }

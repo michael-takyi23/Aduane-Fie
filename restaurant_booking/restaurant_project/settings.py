@@ -25,9 +25,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-i5*b&+70untfcm03^*zy1g@8^$9b8rqb5-1_t=x(%rdo)r#e@b')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.environ.get('DEBUG', 'True') == 'True'
 
-ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '8000-michaeltaky-aduanepafie-iqu5s0bxw5b.ws.codeinstitute-ide.net').split(',')
+ALLOWED_HOSTS = ['8000-michaeltaky-aduanepafie-iqu5s0bxw5b.ws.codeinstitute-ide.net', 'localhost', '127.0.0.1']
+
+CSRF_TRUSTED_ORIGINS = ['https://8000-michaeltaky-aduanepafie-iqu5s0bxw5b.ws.codeinstitute-ide.net']
 
 # Application definition
 
@@ -39,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'bookings',
+    'django_bootstrap5',
 ]
 
 MIDDLEWARE = [
@@ -132,3 +135,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
