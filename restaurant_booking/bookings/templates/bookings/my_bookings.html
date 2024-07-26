@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}My Bookings{% endblock %}
+
+{% block content %}
+    <h2>My Bookings</h2>
+    {% if bookings %}
+        <ul class="list-group">
+        {% for booking in bookings %}
+            <li class="list-group-item">
+                {{ booking.date }} at {{ booking.time }} - {{ booking.guests }} guests
+                <a href="{% url 'cancel_booking' booking.id %}" class="btn btn-danger btn-sm float-right">Cancel</a>
+            </li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>You have no bookings.</p>
+    {% endif %}
+{% endblock %}
