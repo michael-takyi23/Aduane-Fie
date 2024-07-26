@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from .models import Booking, Table, MenuItem
@@ -50,3 +50,8 @@ def cancel_booking(request, booking_id):
 def menu(request):
     menu_items = MenuItem.objects.all()
     return render(request, 'menu.html', {'menu_items': menu_items})
+
+@login_required
+def booking_detail(request, booking_id):
+    booking = get_object_or_404(Booking, id=booking_id, user=request.user)
+    return render(request, 'booking_detail.html', {'booking': booking})    

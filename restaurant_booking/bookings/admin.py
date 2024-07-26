@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Table, MenuItem, Booking, Order
+from .models import Table, MenuItem, Booking
 
 # Register your models here.
 
@@ -19,8 +19,3 @@ class BookingAdmin(admin.ModelAdmin):
     list_display = ('user', 'table', 'date', 'time', 'guests')
     list_filter = ('date', 'time')
     search_fields = ('user__username', 'user__email')
-
-@admin.register(Order)
-class OrderAdmin(admin.ModelAdmin):
-    list_display = ('booking', 'item', 'quantity')
-    list_filter = ('booking__date', 'item')
