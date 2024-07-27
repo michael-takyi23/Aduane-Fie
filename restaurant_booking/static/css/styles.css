@@ -9,7 +9,7 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
 
 /* Global Styles */
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Roboto', Lato, sans-serif;
     background-color: #fdfd04;
     color: #333;
     line-height: 1.6;
