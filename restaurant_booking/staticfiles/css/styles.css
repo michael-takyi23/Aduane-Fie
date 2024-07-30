@@ -1,0 +1,161 @@
+/* static/css/styles.css */
+
+/* Reset some default styles */
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+body {
+    font-family: 'Roboto', Lato, sans-serif;
+    background-color: #fdfd04;
+    color: #333;
+    line-height: 1.6;
+    background-image: url("{% static 'images/kente_background.jpg' %}");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.navbar .navbar-brand {
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar .nav-link {
+    color: #fff;
+}
+
+.navbar .nav-link:hover {
+    color: #ddd;
+}
+
+/* Jumbotron Styles */
+.jumbotron {
+    background-color: #141415;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 0.3rem;
+}
+
+.jumbotron h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.jumbotron p {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+}
+
+.jumbotron .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+/* Form Styles */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 0.3rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form .form-group {
+    margin-bottom: 15px;
+}
+
+form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form .form-group input,
+form .form-group textarea,
+form .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #007bff;
+    border-color:  #8cf811;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-danger:hover {
+    background-color: #bd2130;
+    border-color: #bd2130;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.btn-secondary:hover {
+    background-color: #545b62;
+    border-color: #545b62;
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    border-radius: 0.3rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 20px;
+}
+
+/* List Styles */
+.list-group-item {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+
+.list-group-item .btn {
+    margin-left: 10px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #040404;
+    color: #8cf811;
+    text-align: center;
+    padding: 20px;
+    margin-top: 5px;
+    border-radius: 0.3rem;
+}

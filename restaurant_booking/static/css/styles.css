@@ -7,15 +7,16 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
     font-weight: normal;
 }
 
-/* Global Styles */
 body {
-    font-family: 'Roboto', Lato, sans-serif;
-    background-color: #fdfd04;
-    color: #333;
-    line-height: 1.6;
+    background-image: url('/static/images/kente_background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .container {
+    background-color: #8cf811;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
@@ -23,21 +24,20 @@ body {
 
 /* Navbar Styles */
 .navbar {
-    background-color: #007bff;
-    color: #fff;
+    background-color: #5aa307;
 }
 
 .navbar .navbar-brand {
     font-weight: bold;
-    color: #fff;
+    color: #0b0b0b;
 }
 
 .navbar .nav-link {
-    color: #fff;
+    color: #020202;
 }
 
 .navbar .nav-link:hover {
-    color: #ddd;
+    color: #090909;
 }
 
 /* Jumbotron Styles */
@@ -66,10 +66,9 @@ body {
 
 /* Form Styles */
 form {
-    background-color: #fff;
+    background-color:#8cf811;
     padding: 20px;
     border-radius: 0.3rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 form .form-group {

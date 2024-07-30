@@ -10,7 +10,7 @@ class TableAdmin(admin.ModelAdmin):
 
 @admin.register(MenuItem)
 class MenuItemAdmin(admin.ModelAdmin):
-    list_display = ('name', 'price')
+    list_display = ('name', 'price', 'image')
     list_filter = ('price',)
     search_fields = ('name', 'description')
 
