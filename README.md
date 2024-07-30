@@ -151,3 +151,33 @@ source venv/bin/activate  # On Windows, use venv\Scripts\activate
    - Usability Testing: Evaluate the user interface and experience, ensuring that it is intuitive and easy to navigate. 
 
    - Security Testing: Ensure that the system is secure, particularly focusing on authentication and data protection. For example: Test that only authenticated users can access specific features like viewing or canceling their bookings.
+
+## Deployment
+
+This project is deployed on Heroku. To deploy your own instance:
+
+1. Create a new Heroku app
+2. Set up the necessary environment variables in Heroku's config vars
+3. Connect your GitHub repository to the Heroku app
+4. Enable automatic deploys or manually deploy your main branch
+
+## Future Enhancements
+
+- Implement a review system for customers
+- Add a more detailed staff dashboard with analytics
+- Integrate a payment system for pre-booking payments or deposits
+- Implement a loyalty program for regular customers
+
+## Contributing
+
+Contributions to Aduanepa-Fie are welcome! Please follow these steps:
+
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
