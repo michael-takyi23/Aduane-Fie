@@ -23,6 +23,7 @@ Aduanepa-Fie is a full-stack web application for a restaurant booking system. Th
 
 - User registration and authentication
 - Restaurant menu display
+- Visually appealing menu with food images
 - Table reservation system
 - Booking management (view, create, update, cancel)
 - Admin panel for staff to manage bookings and menu items
@@ -167,6 +168,8 @@ This project is deployed on Heroku. To deploy your own instance:
 - Add a more detailed staff dashboard with analytics
 - Integrate a payment system for pre-booking payments or deposits
 - Implement a loyalty program for regular customers
+- Allow restaurant staff to upload and update menu item images through the admin interface
+- Implement image optimization for faster loading times
 
 ## Contributing
 
