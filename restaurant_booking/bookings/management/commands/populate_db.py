@@ -6,7 +6,7 @@ class Command(BaseCommand):
 
     def handle(self, *args, **kwargs):
         try:
-            # Create tables if they don't already exist
+            # tables if they don't already exist
             if Table.objects.exists():
                 self.stdout.write(self.style.WARNING('Tables already exist. Skipping table creation.'))
             else:
@@ -15,14 +15,14 @@ class Command(BaseCommand):
                     Table.objects.create(number=i, capacity=capacity)
                 self.stdout.write(self.style.SUCCESS('Successfully created tables'))
 
-            # Create menu items if they don't already exist
+            # menu items if they don't already exist
             if MenuItem.objects.exists():
                 self.stdout.write(self.style.WARNING('Menu items already exist. Skipping menu item creation.'))
             else:
                 menu_items = [
-                    {'name': 'Jollof Rice', 'description': 'Spicy rice dish with vegetables', 'price': 12.99},
-                    {'name': 'Fufu with Light Soup', 'description': 'Cassava dough with spicy soup', 'price': 14.99},
-                    {'name': 'Waakye', 'description': 'Rice and beans with spicy sauce', 'price': 11.99},
+                    {'name': 'Jollof Rice', 'description': 'Spicy rice dish with assorted vegetables', 'price': 12.99},
+                    {'name': 'Fufu with Light Soup', 'description': 'Cassava dough with spicy vegetable soup', 'price': 14.99},
+                    {'name': 'Waakye', 'description': 'Rice and beans with spicy vegetable sauce', 'price': 11.99},
                     {'name': 'Kelewele', 'description': 'Spicy fried plantains', 'price': 8.99},
                     {'name': 'Banku with Tilapia', 'description': 'Fermented corn dough with grilled fish', 'price': 16.99},
                 ]

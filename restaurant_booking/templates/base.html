@@ -17,7 +17,10 @@
             {% if user.is_authenticated %}
                 <a class="nav-item nav-link" href="{% url 'create_booking' %}">Book a Table</a>
                 <a class="nav-item nav-link" href="{% url 'my_bookings' %}">My Bookings</a>
-                <a class="nav-item nav-link" href="{% url 'logout' %}">Logout</a>
+                <form id="logout-form" action="{% url 'logout' %}" method="post" style="display: inline;">
+                    {% csrf_token %}
+                    <button type="submit" class="nav-item nav-link btn btn-link" style="display: inline; padding: 0;">Logout</button>
+                </form>
             {% else %}
                 <a class="nav-item nav-link" href="{% url 'login' %}">Login</a>
                 <a class="nav-item nav-link" href="{% url 'register' %}">Register</a>
@@ -36,7 +39,7 @@
         {% endblock %}
     </div>
 
-    <footer class="mt-4">
+    <footer class="mt-4 text-center">
         <p>&copy; 2024 Aduanepa-Fie. All Rights Reserved.</p>
     </footer>
 
