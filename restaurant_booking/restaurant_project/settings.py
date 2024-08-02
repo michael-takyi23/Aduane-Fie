@@ -130,6 +130,14 @@ if not DEBUG:
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# Heroku settings
+if 'DYNO' in os.environ:
+    import dj_database_url
+    DATABASES['default'] = dj_database_url.config()
+    SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+    ALLOWED_HOSTS = ['aduanepa-fie.herokuapp.com']
+    DEBUG = False
  
 
 # Default primary key field type
