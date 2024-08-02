@@ -155,3 +155,15 @@ footer {
     margin-top: 5px;
     border-radius: 0.3rem;
 }
+
+/* Footer Social Media Links */
+footer .social-media a {
+    color: #8cf811;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer .social-media a:hover {
+    text-decoration: underline;
+}
+
