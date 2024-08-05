@@ -8,7 +8,7 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
 }
 
 body {
-    background-image: url('/static/images/kente_background.jpg');
+    background-image: url("/static/images/kente_background.482d582f7da8.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
