@@ -65,6 +65,20 @@ body {
     font-size: 1rem;
 }
 
+@media (min-width: 768px) {
+    .jumbotron {
+        padding: 80px 40px;
+    }
+
+    .jumbotron h1 {
+        font-size: 4rem;
+    }
+
+    .jumbotron p {
+        font-size: 1.5rem;
+    }
+}
+
 /* Form Styles */
 form {
     background-color:#8cf811;
@@ -152,7 +166,7 @@ footer {
     color: #8cf811;
     text-align: center;
     padding: 20px;
-    margin-top: 5px;
+    margin-top: auto;
     border-radius: 0.3rem;
 }
 
