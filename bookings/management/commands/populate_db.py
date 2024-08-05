@@ -1,5 +1,6 @@
 from django.core.management.base import BaseCommand
 from bookings.models import Table, MenuItem
+from cloudinary.uploader import upload
 from django.core.files import File
 from django.conf import settings
 import os
@@ -36,15 +37,17 @@ class Command(BaseCommand):
                     }
                 )
                 
+               # Upload image to Cloudinary
                 image_path = os.path.join('static', 'images', item['image'])
                 self.stdout.write(f"Checking for image: {image_path}")
                 if os.path.exists(image_path):
-                    with open(image_path, 'rb') as f:
-                        menu_item.image.save(item['image'], File(f), save=True)
-                    self.stdout.write(self.style.SUCCESS(f"Image found and saved: {item['image']}"))
+                    upload_result = upload(image_path)
+                    menu_item.image = upload_result['url']
+                    menu_item.save()
+                    self.stdout.write(self.style.SUCCESS(f"Image uploaded and saved: {item['image']}"))
                 else:
                     self.stdout.write(self.style.WARNING(f"Image not found: {image_path}"))
-            
+
             self.stdout.write(self.style.SUCCESS('Successfully updated or created menu items'))
 
         except Exception as e:

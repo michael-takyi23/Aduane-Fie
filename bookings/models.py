@@ -1,6 +1,7 @@
 # bookings/models.py
 from django.db import models
 from django.contrib.auth.models import User
+from cloudinary.models import CloudinaryField
 
 class Table(models.Model):
     number = models.IntegerField(unique=True)
@@ -13,7 +14,7 @@ class MenuItem(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField()
     price = models.DecimalField(max_digits=6, decimal_places=2)
-    image = models.ImageField(upload_to='images/')
+    image = CloudinaryField('image')
 
     def __str__(self):
         return self.name
