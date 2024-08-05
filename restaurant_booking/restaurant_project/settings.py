@@ -28,9 +28,17 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-i5*b&+70untfcm03^*zy1
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG', 'True') == 'True'
 
-ALLOWED_HOSTS = ['8000-michaeltaky-aduanepafie-iqu5s0bxw5b.ws.codeinstitute-ide.net', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = [
+    '8000-michaeltaky-aduanepafie-iqu5s0bxw5b.ws.codeinstitute-ide.net',
+    'aduanepa-fie-cfd5a7f7eb6e.herokuapp.com',
+    'localhost',
+    '127.0.0.1'
+]
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-michaeltaky-aduanepafie-iqu5s0bxw5b.ws.codeinstitute-ide.net']
+CSRF_TRUSTED_ORIGINS = [
+    'https://8000-michaeltaky-aduanepafie-iqu5s0bxw5b.ws.codeinstitute-ide.net',
+    'https://aduanepa-fie-cfd5a7f7eb6e.herokuapp.com'
+]
 
 # Application definition
 
@@ -76,7 +84,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'restaurant_project.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
@@ -89,7 +96,6 @@ DATABASES = {
 
 if 'DATABASE_URL' in os.environ:
     DATABASES['default'] = dj_database_url.config(conn_max_age=600)
-
 
 
 # Password validation
@@ -143,15 +149,6 @@ if not DEBUG:
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
-# Heroku settings
-if 'DYNO' in os.environ:
-    import dj_database_url
-    DATABASES['default'] = dj_database_url.config()
-    SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-    ALLOWED_HOSTS = ['aduanepa-fie.herokuapp.com']
-    DEBUG = False
- 
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
