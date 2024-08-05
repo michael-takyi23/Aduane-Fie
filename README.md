@@ -17,17 +17,26 @@
 
 ## Introduction
 
-Aduanepa-Fie is a full-stack web application for a restaurant booking system. The name "Aduanepa-Fie" means "home of good food" in Twi, reflecting the restaurant's commitment to providing excellent culinary experiences. This system allows customers to view the restaurant's menu, make table reservations, and manage their bookings, while providing staff with tools to manage reservations efficiently.
+![Alt text](URL_to_image)
+
+Aduanepa Fie is a full-stack web application for a restaurant booking system. The name "Aduanepa Fie" means "home of good food" in Twi, reflecting the restaurant's commitment to providing excellent culinary experiences. This system allows customers to view the restaurant's menu, make table reservations, and manage their bookings, while providing staff with tools to manage reservations efficiently.
 
 ## Features
 
 - User registration and authentication
+![Alt text](URL_to_image)
 - Restaurant menu display
+![Alt text](URL_to_image)
 - Visually appealing menu with food images
+![Alt text](URL_to_image)
 - Table reservation system
+![Alt text](URL_to_image)
 - Booking management (view, create, update, cancel)
+![Alt text](URL_to_image)
 - Admin panel for staff to manage bookings and menu items
+![Alt text](URL_to_image)
 - Responsive design for mobile and desktop use
+![Alt text](URL_to_image)
 
 ## Technologies Used
 
