@@ -17,26 +17,27 @@
 
 ## Introduction
 
-![Alt text](URL_to_image)
+![Aduanepa-Fie Logo](static/images/default_image.jpg)
 
 Aduanepa Fie is a full-stack web application for a restaurant booking system. The name "Aduanepa Fie" means "home of good food" in Twi, reflecting the restaurant's commitment to providing excellent culinary experiences. This system allows customers to view the restaurant's menu, make table reservations, and manage their bookings, while providing staff with tools to manage reservations efficiently.
 
 ## Features
 
-- User registration and authentication
-![Alt text](URL_to_image)
-- Restaurant menu display
-![Alt text](URL_to_image)
-- Visually appealing menu with food images
-![Alt text](URL_to_image)
-- Table reservation system
-![Alt text](URL_to_image)
-- Booking management (view, create, update, cancel)
-![Alt text](URL_to_image)
-- Admin panel for staff to manage bookings and menu items
-![Alt text](URL_to_image)
-- Responsive design for mobile and desktop use
-![Alt text](URL_to_image)
+### User registration and authentication
+![User registration and authentication](static/images/user_registration.png)
+![User registration and authentication](static/images/user_authentication.png)
+### Restaurant menu display
+### Visually appealing menu with food images
+![Menu display](static/images/menu_display.png)
+### Table reservation system
+![Table reservation](static/images/table_reservation.png)
+### Booking management (view, create, update, cancel)
+![Booking management](static/images/booking_management.png)
+### Admin panel for staff to manage bookings and menu items
+![Admin](static/images/admin_panel.png)
+![Admin](static/images/admin_panel2.png)
+### Responsive design for mobile and desktop use
+![Alt text](static/images/responsive_design.png)
 
 ## Technologies Used
 
@@ -48,6 +49,7 @@ Aduanepa Fie is a full-stack web application for a restaurant booking system. Th
 - Whitenoise for static file serving
 - Gunicorn for WSGI server
 - Heroku
+- Cloudinary for cloud-based media assets
 
 ## Setup and Installation
 
@@ -125,9 +127,9 @@ source venv/bin/activate  # On Windows, use venv\Scripts\activate
 
 - `/` - Home page
 - `/menu/` - Restaurant menu
-- `/book/` - Make a reservation
-- `/my-bookings/` - View user's bookings
-- `/cancel-booking/<int:booking_id>/` - Cancel a specific booking
+- `/create_booking/` - Make a reservation
+- `/my_bookings/` - View user's bookings
+- `/cancel_booking/<int:booking_id>/` - Cancel a specific booking
 - `/accounts/login/` - User login
 - `/accounts/logout/` - User logout
 - `/accounts/register/` - User registration
@@ -192,4 +194,4 @@ Contributions to Aduanepa-Fie are welcome! Please follow these steps:
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is a property of Aduanepa-Fie. 
