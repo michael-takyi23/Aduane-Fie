@@ -13,6 +13,7 @@
 10. [Deployment](#deployment)
 11. [Future Enhancements](#future-enhancements)
 12. [Contributing](#contributing)
+13. [Acknowledgement](#acknowledgement)
 13. [License](#license)
 
 ## Introduction
@@ -191,6 +192,14 @@ Contributions to Aduanepa-Fie are welcome! Please follow these steps:
 3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
+
+
+## Acknowledgements
+
+I would like to thank CI Tutor support for valuable assisitance and support. The guidance and solutions offered have been instrumental in overcoming challenges and enhancing the quality of the final product.
+
+Also to [ChatGPT by OpenAI](https://openai.com/chatgpt) for providing assistance and support during the development of this project. 
+
 
 ## License
 
