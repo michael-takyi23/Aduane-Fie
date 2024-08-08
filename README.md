@@ -49,7 +49,7 @@ Aduanepa Fie is a full-stack web application for a restaurant booking system. Th
 ![Restaurant Menu Display](static/images/menu_display_wireframe.png)
 
 ### Booking Management
-![Booking Management](https://example.com/path/to/your/booking_management_wireframe.png)
+![Booking Management](static/images/booking_management_wireframe.png)
 
 ### Homepage
 ![Homepage](static/images/homepage_wireframe.png)
@@ -66,7 +66,7 @@ Aduanepa Fie is a full-stack web application for a restaurant booking system. Th
 - Gunicorn for WSGI server
 - Heroku
 - Cloudinary for cloud-based media assets
-- Balsamic for wireframe
+- Balsamic for wireframes
 
 ## Setup and Installation
 
