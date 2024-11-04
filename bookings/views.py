@@ -4,6 +4,10 @@ from django.contrib import messages
 from django.contrib.auth.forms import UserCreationForm
 from .models import Booking, Table, MenuItem
 from .forms import BookingForm
+from django.utils import timezone
+from django.views.generic import UpdateView
+from django.urls import reverse_lazy
+
 
 
 # Create your views here.
@@ -66,3 +70,32 @@ def menu(request):
 def booking_detail(request, booking_id):
     booking = get_object_or_404(Booking, id=booking_id, user=request.user)
     return render(request, 'booking_detail.html', {'booking': booking})    
+
+@login_required
+def update_booking(request, booking_id):
+    booking = get_object_or_404(Booking, id=booking_id, user=request.user)
+    if request.method == 'POST':
+        form = BookingForm(request.POST, instance=booking)
+        if form.is_valid():
+            updated_booking = form.save(commit=False)
+            updated_booking.user = request.user
+            # Check if the new date and time are available for the booking
+            available_table = Table.objects.filter(
+                capacity__gte=updated_booking.guests
+            ).exclude(
+                booking__date=updated_booking.date,
+                booking__time=updated_booking.time
+            ).first()
+
+            if available_table:
+                updated_booking.table = available_table
+                updated_booking.save()
+                messages.success(request, 'Booking updated successfully!')
+                return redirect('my_bookings')
+            else:
+                messages.error(request, 'No tables available for the selected date and time.')
+    else:
+        form = BookingForm(instance=booking)
+    
+    return render(request, 'update_booking.html', {'form': form, 'booking': booking})
+

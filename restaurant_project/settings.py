@@ -9,6 +9,7 @@ https://docs.djangoproject.com/en/5.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.0/ref/settings/
 """
+import cloudinary
 import os
 from pathlib import Path
 import dj_database_url
@@ -22,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Cloudinary settings
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': os.environ.get('CLOUDINARY_CLOUD_NAME'),
-    'API_KEY': os.environ.get('CLOUDINARY_API_KEY'),
-    'API_SECRET': os.environ.get('CLOUDINARY_API_SECRET'),
+    'CLOUD_NAME': ('sunboy12345'),
+    'API_KEY': os.getenv('169198791131762'),
+    'API_SECRET': os.getenv('W5uo3Js2xK9z_I1TtZNYtx74PMU'),
 }
 
 
@@ -38,14 +39,14 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-i5*b&+70untfcm03^*zy1
 DEBUG = os.environ.get('DEBUG', 'True') == 'True'
 
 ALLOWED_HOSTS = [
-    '8000-michaeltaky-aduanepafie-iqu5s0bxw5b.ws.codeinstitute-ide.net',
+    '8000-michaeltaky-aduanepafie-bnu5vcpyjvn.ws.codeinstitute-ide.net',
     'aduanepa-fie-cfd5a7f7eb6e.herokuapp.com',
     'localhost',
     '127.0.0.1'
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://8000-michaeltaky-aduanepafie-iqu5s0bxw5b.ws.codeinstitute-ide.net',
+    'https://8000-michaeltaky-aduanepafie-bnu5vcpyjvn.ws.codeinstitute-ide.net',
     'https://aduanepa-fie-cfd5a7f7eb6e.herokuapp.com'
 ]
 
@@ -98,17 +99,12 @@ WSGI_APPLICATION = 'restaurant_project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.sqlite3',
-#        'NAME': BASE_DIR / 'db.sqlite3',
-#    }
-#}
-
-if 'DATABASE_URL' in os.environ:
-    DATABASES = {
-        'default': dj_database_url.config(conn_max_age=600)
+DATABASES = {
+   'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
