@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Cloudinary settings
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': ('sunboy12345'),
-    'API_KEY': os.getenv('169198791131762'),
-    'API_SECRET': os.getenv('W5uo3Js2xK9z_I1TtZNYtx74PMU'),
+    'CLOUD_NAME': os.getenv('CLOUD_NAME'),
+    'API_KEY': os.getenv('CLOUDINARY_API_KEY'),
+    'API_SECRET': os.getenv('CLOUDINARY_API_SECRET'),
 }
 
 
@@ -36,7 +36,7 @@ CLOUDINARY_STORAGE = {
 SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-i5*b&+70untfcm03^*zy1g@8^$9b8rqb5-1_t=x(%rdo)r#e@b')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get('DEBUG', 'True') == 'True'
+DEBUG = os.environ.get('DEBUG', 'False') == 'False'
 
 ALLOWED_HOSTS = [
     '8000-michaeltaky-aduanepafie-bnu5vcpyjvn.ws.codeinstitute-ide.net',

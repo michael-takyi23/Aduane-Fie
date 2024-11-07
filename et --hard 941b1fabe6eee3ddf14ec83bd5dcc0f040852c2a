@@ -1,0 +1,322 @@
+[33mcommit 773bd02572ee80ccce8072a0066883624c78a999[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Michael Oppong Takyi <michaeltakyi11@gmail.com>
+Date:   Thu Nov 7 20:03:53 2024 +0000
+
+    Add custom error page and configure 404/500 error handling.
+
+[33mcommit 941b1fabe6eee3ddf14ec83bd5dcc0f040852c2a[m
+Author: Michael Oppong Takyi <michaeltakyi11@gmail.com>
+Date:   Thu Nov 7 17:56:48 2024 +0000
+
+    fix footer positioning regardless of page content, Implement form validation to prevent past dates and times from being selected, enhancing the booking flow.
+
+[33mcommit 8668b7af87a190dc75c95921f6f0f19aa222bd09[m
+Author: Michael Oppong Takyi <michaeltakyi11@gmail.com>
+Date:   Mon Nov 4 19:11:13 2024 +0000
+
+    Add form-based update functionality for bookings and configure Cloudinary image upload
+
+[33mcommit 0327cd5609c715fd99c18abd31dfa5a111043a04[m
+Author: Michael Oppong Takyi <michaeltakyi11@gmail.com>
+Date:   Thu Aug 8 10:37:03 2024 +0000
+
+    Add images to static and modify README.
+
+[33mcommit 2803c9b20e9ca54cc7a5f0c80a21455d33fd5cf9[m
+Author: Michael Oppong Takyi <michaeltakyi11@gmail.com>
+Date:   Thu Aug 8 10:23:54 2024 +0000
+
+    Add images to static files and modify README.
+
+[33mcommit fb420685c20922ed0015ce01be22a8cd1f7f407f[m
+Author: Michael Oppong Takyi <michaeltakyi11@gmail.com>
+Date:   Tue Aug 6 15:41:16 2024 +0000
+
+    Modify README, add acknowledgement.
+
+[33mcommit 85f7183501d65293e289e4c5b43534d8de18ad0f[m
+Author: Michael Oppong Takyi <michaeltakyi11@gmail.com>
+Date:   Tue Aug 6 15:17:34 2024 +0000
+
+    Add image to README for better documentation. Add images to static images. Miscellaneous adjustments and bug fixes.
+
+[33mcommit 7c5ec682142a91523aa528f51e49cee2a90f613f[m
+Author: Michael Oppong Takyi <michaeltakyi11@gmail.com>
+Date:   Mon Aug 5 16:33:16 2024 +0000
+
+    Populate the database with menu items and images. Address issues with item visibility and image display. Integrate Cloudinary for image storage and update database population script.
+
+[33mcommit 12d4dbab23e7936eaa9aab9b40605e0b61d8c15b[m
+Author: Michael Oppong Takyi <michaeltakyi11@gmail.com>
+Date:   Mon Aug 5 14:56:00 2024 +0000
+
+    Switch to external database configuration.
+
+[33mcommit c5ca61352fc307cdd6781ed656d5f3b2f1c54a57[m
+Author: Michael Oppong Takyi <michaeltakyi11@gmail.com>
+Date:   Mon Aug 5 14:29:33 2024 +0000
+
+    Move all contents from restaurant_booking to the root directory.
+
+[33mcommit d9e5852e40a7cc6f761af3d1f1a62efa089a2f4d[m
+Author: Michael Oppong Takyi <michaeltakyi11@gmail.com>
+Date:   Mon Aug 5 13:58:47 2024 +0000
+
+    Remove Procfile from the incorrect location.
+
+[33mcommit 262563d8b1fee86fd2d67f6bccc2b0ac8a723435[m
+Author: Michael Oppong Takyi <michaeltakyi11@gmail.com>
+Date:   Mon Aug 5 13:55:13 2024 +0000
+
+    Move Procfile to root directory for Heroku deployment.
+
+[33mcommit 85b57114fbf4b96e2de5379115887940e3ed6955[m
+Author: Michael Oppong Takyi <michaeltakyi11@gmail.com>
+Date:   Mon Aug 5 13:43:12 2024 +0000
+
+    Modify settings.py
+
+[33mcommit 4b662edd7963fc2362e3dbfb7a832fe97921db7e[m
+Author: Michael Oppong Takyi <michaeltakyi11@gmail.com>
+Date:   Mon Aug 5 13:20:53 2024 +0000
+
+    Collect static files and prepare for Heroku deployment.
+
+[33mcommit 479b3e0e21ebbd1fde4fd1ccc07063e60cceed9a[m
+Author: Michael Oppong Takyi <michaeltakyi11@gmail.com>
+Date:   Mon Aug 5 13:09:37 2024 +0000
+
+    Move requirements.txt to the root directory for Heroku deployment
+
+[33mcommit 12d4fce522572b42d18c13d6bb557c2c71614b4b[m
+Author: Michael Oppong Takyi <michaeltakyi11@gmail.com>
+Date:   Mon Aug 5 13:05:53 2024 +0000
+
+    Move requirements.txt to root directory for Heroku deployment.
+
+[33mcommit 91feacb17eca1ee6c096bf47e3dd5b2092e1095f[m
+Author: Michael Oppong Takyi <michaeltakyi11@gmail.com>
+Date:   Mon Aug 5 12:51:10 2024 +0000
+
+    Update settings.py
+
+[33mcommit bffabca91a2f05825a7410d24aa026abfe96544a[m
+Author: Michael Oppong Takyi <michaeltakyi11@gmail.com>
+Date:   Mon Aug 5 12:21:00 2024 +0000
+
+    Update .gitignore and README.md with latest changes.
+
+[33mcommit 66c1f078078e4c59ad091882bea5b756e06cc24f[m
+Author: Michael Oppong Takyi <michaeltakyi11@gmail.com>
+Date:   Mon Aug 5 12:17:52 2024 +0000
+
+    Set up environment variables and production settings for Heroku deployment. Add .env file, configured SECRET_KEY, DEBUG, and DATABASE_URL, and update static and media settings.
+
+[33mcommit 3d5f4d8a716cfe44687ad6a125581ddade4de6cd[m
+Author: Michael Oppong Takyi <michaeltakyi11@gmail.com>
+Date:   Fri Aug 2 13:47:20 2024 +0000
+
+    Add favicon links
+
+[33mcommit e3592b70069ce4fff76d6f13a1d9bfda48da5e53[m
+Author: Michael Oppong Takyi <michaeltakyi11@gmail.com>
+Date:   Fri Aug 2 13:44:56 2024 +0000
+
+    Add Procfile for Heroku deployment and ensure project root setup.
+
+[33mcommit ded53ca32257aea048acf834dca6f402354da29f[m
+Author: Michael Oppong Takyi <michaeltakyi11@gmail.com>
+Date:   Fri Aug 2 12:07:16 2024 +0000
+
+    Modify base html, add google maps link to the footer.
+
+[33mcommit 943686fe0ed6e3ff86aa1afd7cd885207623f320[m
+Author: Michael Oppong Takyi <michaeltakyi11@gmail.com>
+Date:   Fri Aug 2 12:01:56 2024 +0000
+
+    Implement responsive navbar with hamburger menu on smaller screens and include logo image, modify style css for the footer and add the social media links to footer.
+
+[33mcommit 3cd1cafdfc09bb870191255804f93b23f2205788[m
+Author: Michael Oppong Takyi <michaeltakyi11@gmail.com>
+Date:   Wed Jul 31 10:35:35 2024 +0000
+
+    modify styles css
+
+[33mcommit 2207142517510a6b78e2e97dc662fdf2c9ec2a97[m
+Author: Michael Oppong Takyi <michaeltakyi11@gmail.com>
+Date:   Wed Jul 31 09:49:20 2024 +0000
+
+    Add high-resolution logo and traditional Ghanaian elements for 'Aduanepa-Fie'
+
+[33mcommit d64a82506d7a934433549da03fdf2f0529e38093[m
+Author: Michael Oppong Takyi <michaeltakyi11@gmail.com>
+Date:   Tue Jul 30 16:53:51 2024 +0000
+
+    Update README.
+
+[33mcommit 7752e74830ed90c18ed0fcce1b23e3e402203a67[m
+Author: Michael Oppong Takyi <michaeltakyi11@gmail.com>
+Date:   Tue Jul 30 16:51:22 2024 +0000
+
+    Add images for menu items and ensure media files are correctly included. Fix issues with initial data population script and confirm image paths.
+
+[33mcommit ebcae3f3dd050a74573f55dd33b7c2ef462c3241[m
+Author: Michael Oppong Takyi <michaeltakyi11@gmail.com>
+Date:   Tue Jul 30 15:35:42 2024 +0000
+
+    Modify README: Add deployment, future enhancement, contributions and license
+
+[33mcommit 4c22a6457acee29cc3a226b0602a00f859769254[m
+Author: Michael Oppong Takyi <michaeltakyi11@gmail.com>
+Date:   Tue Jul 30 15:18:52 2024 +0000
+
+    Update styling and background image configuration for the website - Add images for menu items and display them in the menu template for enhanced aesthetics
+
+[33mcommit 8831a06a9a8a619bb5c892bacdda2533f44ceab3[m
+Author: Michael Oppong Takyi <michaeltakyi11@gmail.com>
+Date:   Tue Jul 30 12:47:49 2024 +0000
+
+    Update README: Add detailed project overview, features, setup instructions, and testing strategy
+
+[33mcommit 855a68f30559521b863ecb4ba326273dc291eb72[m
+Author: Michael Oppong Takyi <michaeltakyi11@gmail.com>
+Date:   Tue Jul 30 11:23:42 2024 +0000
+
+    Update base template: Implement form-based logout for security, add footer styling, and improve overall structure
+
+[33mcommit 76523f59d33f3a064194ccb5e4992c8c131a5307[m
+Author: Michael Oppong Takyi <michaeltakyi11@gmail.com>
+Date:   Sat Jul 27 02:06:42 2024 +0000
+
+    Modify templates and static files
+
+[33mcommit fcd46ac9b10652b6371628ddc172e159018b9869[m
+Author: Michael Oppong Takyi <michaeltakyi11@gmail.com>
+Date:   Fri Jul 26 22:54:48 2024 +0000
+
+    Fix: Import UserCreationForm in views.py to resolve NameError on register view. Move and update templates, update URLs and CSS.
+
+[33mcommit fd3f9ac9ac3a8e11f40ac59166a35307d2dd1e6b[m
+Author: Michael Oppong Takyi <michaeltakyi11@gmail.com>
+Date:   Fri Jul 26 20:57:37 2024 +0000
+
+    Add user registration functionality with templates and URL patterns
+
+[33mcommit 58fc558a6c8d0fd5ef85b2b0c213f202781f3eee[m
+Author: Michael Oppong Takyi <michaeltakyi11@gmail.com>
+Date:   Fri Jul 26 20:14:48 2024 +0000
+
+    Move templates to root templates directory and update URL patterns
+
+[33mcommit 993d3b5d49afc55e58e06ec92777b5da4a8bc3b5[m
+Author: Michael Oppong Takyi <michaeltakyi11@gmail.com>
+Date:   Fri Jul 26 17:32:36 2024 +0000
+
+    Add requirements.txt with project dependencies
+
+[33mcommit 9992d0a43aafb14407daf52d27712d2f8a8cfbeb[m
+Author: Michael Oppong Takyi <michaeltakyi11@gmail.com>
+Date:   Fri Jul 26 17:26:29 2024 +0000
+
+    Add initial data population command and improve settings
+    
+    - Created a management command `populate_db` to populate the database with initial data for tables and menu items
+      - Added checks to avoid duplicate entries if the command is run multiple times
+      - Implemented basic error handling to manage unexpected issues gracefully
+    - Updated `settings.py` to enhance security and flexibility
+
+[33mcommit b75546ed5d321515de8c44a2f869487fb6f54647[m
+Author: Michael Oppong Takyi <michaeltakyi11@gmail.com>
+Date:   Fri Jul 26 16:48:51 2024 +0000
+
+    Add base template and static files for styling and functionality
+    
+    - Create base.html template with Bootstrap integration
+    - Add styles.css for modern and clean design
+    - Add scripts.js for basic JavaScript functionality
+    - Configure settings.py for static files handling
+    - Ensure all templates extend base.html for consistent styling
+
+[33mcommit c7356b715a2e82f9cf5e91d184d86ea27214d3d1[m
+Author: Michael Oppong Takyi <michaeltakyi11@gmail.com>
+Date:   Fri Jul 26 16:22:09 2024 +0000
+
+    Add menu template to display restaurant menu items
+
+[33mcommit fb6544b536b54daaab15a2715d139c7c6e34b654[m
+Author: Michael Oppong Takyi <michaeltakyi11@gmail.com>
+Date:   Fri Jul 26 16:18:22 2024 +0000
+
+    Add booking detail template to show booking details with cancellation link
+
+[33mcommit 76fbfe6dbc7e3b7effd76c5e76ccf3ca9aab8bd8[m
+Author: Michael Oppong Takyi <michaeltakyi11@gmail.com>
+Date:   Fri Jul 26 16:15:49 2024 +0000
+
+    Add cancel booking template to confirm booking cancellation
+
+[33mcommit 6127ed44375f8f2f0dc0f79474462b76d04a9d28[m
+Author: Michael Oppong Takyi <michaeltakyi11@gmail.com>
+Date:   Fri Jul 26 16:06:57 2024 +0000
+
+    Add my bookings template to display user bookings with cancel option
+
+[33mcommit 3491ca84d47ce4be447f99d158d4cf472b5af2fc[m
+Author: Michael Oppong Takyi <michaeltakyi11@gmail.com>
+Date:   Fri Jul 26 16:02:16 2024 +0000
+
+    Add create booking html template to bookings
+
+[33mcommit 91c09ef7b2932fb411c69062fd9686bc5dde188b[m
+Author: Michael Oppong Takyi <michaeltakyi11@gmail.com>
+Date:   Fri Jul 26 15:55:10 2024 +0000
+
+    Create home html to enable user login and reservation
+
+[33mcommit 11f4a3c34730f9c95070667c6e17a1307a937da1[m
+Author: Michael Oppong Takyi <michaeltakyi11@gmail.com>
+Date:   Fri Jul 26 15:50:21 2024 +0000
+
+    Implement base html with user aunthentication logic and navigation
+
+[33mcommit 86fed0d78722f43496c91d8c4e14c9d5adb09bf1[m
+Author: Michael Oppong Takyi <michaeltakyi11@gmail.com>
+Date:   Fri Jul 26 15:28:03 2024 +0000
+
+    update restaurant project urls.py, modify views.py, urls.py and admin.py for bookings
+
+[33mcommit 033f6191df3a020150153151d85b469ff09f966b[m
+Author: Michael Oppong Takyi <michaeltakyi11@gmail.com>
+Date:   Fri Jul 26 14:26:01 2024 +0000
+
+    create urls.py to handle bookings
+
+[33mcommit 64ef80ea82ab3174cb30f80eb5831951a6822cc9[m
+Author: Michael Oppong Takyi <michaeltakyi11@gmail.com>
+Date:   Fri Jul 26 14:18:27 2024 +0000
+
+    Update bookings
+
+[33mcommit 6e6ccf476f95c157d3514f1ec6a6e19c6e31eb8f[m
+Author: Michael Oppong Takyi <michaeltakyi11@gmail.com>
+Date:   Fri Jul 26 13:47:33 2024 +0000
+
+    Enhance admin interface and update views.py for bookings
+
+[33mcommit e3809015e92fafaf51ccad520fd86786ac8e75cc[m
+Author: Michael Oppong Takyi <michaeltakyi11@gmail.com>
+Date:   Fri Jul 26 13:28:12 2024 +0000
+
+    Create views.py for bookings
+
+[33mcommit 43ddcab048783bc39043704969f03e0b34371843[m
+Author: Michael Oppong Takyi <michaeltakyi11@gmail.com>
+Date:   Fri Jul 26 13:21:28 2024 +0000
+
+    Initial commit, Add bookings models
+
+[33mcommit 49fac645db903c9c80fcd7f399c43553a930445b[m
+Author: Michael Takyi <136382303+michael-takyi23@users.noreply.github.com>
+Date:   Fri Jul 26 11:54:50 2024 +0200
+
+    Initial commit
