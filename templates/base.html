@@ -14,9 +14,10 @@
     <link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
+    <div class="wrapper">
         <nav class="navbar navbar-expand-lg navbar-light bg-red">
+            <img src="{% static 'images/default_image.jpg' %}" alt="Aduanepa Fie Logo" style="height: 60px;">
             <a class="navbar-brand" href="{% url 'home' %}">ADUANEPA FIE</a>
-            <img src="{% static 'images/default_image.jpg' %}" alt="Aduanepa Fie Logo" style="height: 40px;"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -49,6 +50,7 @@
             {% block content %}
             {% endblock %}
         </div>
+    </div>      
 
     <footer class="footer text-center">
         <p>&copy; 2024 Aduanepa-Fie. All Rights Reserved.</p>
@@ -57,7 +59,7 @@
             <a href="https://www.instagram.com/yourprofile" target="_blank">Instagram</a> |
             <a href="https://www.youtube.com/yourchannel" target="_blank">YouTube</a> |
             <a href="https://www.google.com/maps?q=maps?q=Kurt-Eisner+Str+66,+Leipzig,+Germany" target="_blank">Find Us on Google Maps</a>
-        </div>
+        </div>   
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
