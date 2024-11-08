@@ -36,7 +36,7 @@ CLOUDINARY_STORAGE = {
 SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-i5*b&+70untfcm03^*zy1g@8^$9b8rqb5-1_t=x(%rdo)r#e@b')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get('DEBUG', 'False') == 'False'
+DEBUG = os.environ.get('DEBUG', 'True') == 'False'
 
 ALLOWED_HOSTS = [
     '8000-michaeltaky-aduanepafie-bnu5vcpyjvn.ws.codeinstitute-ide.net',

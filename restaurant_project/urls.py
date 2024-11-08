@@ -20,6 +20,13 @@ from django.contrib import admin
 from django.conf.urls.static import static
 from django.urls import path, include
 
+from django.conf.urls import handler404, handler500
+from django.shortcuts import render
+
+# view for the error page defined
+def custom_error_page(request, exception=None):
+    return render(request, 'error.html')
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('bookings.urls')),
@@ -29,4 +36,6 @@ if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
+handler404 = custom_error_page  # Handles 404 errors
+handler500 = custom_error_page  # Handles 500 errors
 
