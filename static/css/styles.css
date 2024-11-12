@@ -1,19 +1,22 @@
 /* static/css/styles.css */
 
 /* Reset some default styles */
-body, html {
+html, body {
     height: 100%;
     margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: column;
 }
 
 /* Wrapper for main content, to push footer down on short pages */
+
 .wrapper {
-    flex: 1; /* Allows wrapper to fill available space */
+    flex: 1;
     display: flex;
     flex-direction: column;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 80px;
 }
 
 body {
@@ -175,7 +178,6 @@ form .form-group select {
 footer {
     background-color: #040404;
     color: #8cf811;
-    text-align: center;
     padding: 20px;
     width: 100%;
     margin-top: 0 auto;

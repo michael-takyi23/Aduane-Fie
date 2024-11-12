@@ -8,7 +8,7 @@
 5. [Usage](#usage)
 6. [User Stories](#user-stories)
 7. [Database Schema](#database-schema)
-8. [API Endpoints](#api-endpoints)
+8. [Project Management](#Project-Management)
 9. [Testing](#testing)
 10. [Deployment](#deployment)
 11. [Future Enhancements](#future-enhancements)
@@ -150,6 +150,14 @@ source venv/bin/activate  # On Windows, use venv\Scripts\activate
 - `/accounts/login/` - User login
 - `/accounts/logout/` - User logout
 - `/accounts/register/` - User registration
+
+
+## Project Management
+
+We are using a Kanban board to manage tasks, user stories, and sprints. You can view it here:
+
+- [View the Kanban Board on GitHub Projects](https://github.com/users/michael-takyi23/projects/6)
+
 
 ## Testing
 
