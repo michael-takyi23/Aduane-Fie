@@ -3,9 +3,9 @@
 /* Reset some default styles */
 html, body {
     height: 100%;
-    margin: 0;
+    margin: 0 auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 /* Wrapper for main content, to push footer down on short pages */
@@ -23,16 +23,16 @@ body {
     background-image: url('/static/images/kente_background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position: center;
+    display: flex;
+    height: 100%;
 }
 
 .container {
-    background-color: #8cf811;
-    max-width: 1200px;
     margin: auto;
-    padding: 20px;
+    padding: 50px;
     flex: 1; 
+    margin-top: 5rem;
 }
 
 /* Navbar Styles */
@@ -56,11 +56,10 @@ body {
 
 /* Jumbotron Styles */
 .jumbotron {
-    background-color: #141415;
     color: #fff;
     padding: 60px 20px;
     text-align: center;
-    border-radius: 0.3rem;
+    border-radius: 1.5rem;
 }
 
 .jumbotron h1 {
@@ -178,7 +177,7 @@ form .form-group select {
 footer {
     background-color: #040404;
     color: #8cf811;
-    padding: 20px;
+    padding: 50px;
     width: 100%;
     margin-top: 0 auto;
     border-radius: 0.3rem;
