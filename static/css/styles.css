@@ -2,10 +2,9 @@
 
 /* Reset some default styles */
 html, body {
-    height: 100%;
-    margin: 0 auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    max-width: 100%;
 }
 
 /* Wrapper for main content, to push footer down on short pages */
@@ -24,14 +23,12 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    display: flex;
-    height: 100%;
 }
 
 .container {
+    background: whitesmoke;
     margin: auto;
-    padding: 50px;
-    flex: 1; 
+    padding: 50px; 
     margin-top: 5rem;
 }
 
@@ -56,7 +53,7 @@ body {
 
 /* Jumbotron Styles */
 .jumbotron {
-    color: #fff;
+    color: #110000;
     padding: 60px 20px;
     text-align: center;
     border-radius: 1.5rem;
@@ -177,10 +174,11 @@ form .form-group select {
 footer {
     background-color: #040404;
     color: #8cf811;
-    padding: 50px;
+    padding: 20px;
     width: 100%;
     margin-top: 0 auto;
     border-radius: 0.3rem;
+    text-align: center;
 }
 
 /* Footer Social Media Links */
