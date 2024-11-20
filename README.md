@@ -189,6 +189,18 @@ We are using a Kanban board to manage tasks, user stories, and sprints. You can 
 
    - Security Testing: Ensure that the system is secure, particularly focusing on authentication and data protection. For example: Test that only authenticated users can access specific features like viewing or canceling their bookings.
 
+3. Validator Testing (VT)
+   - HTML
+   - CSS
+   
+   
+4. Lighthouse Testing (LT)
+
+   Lighthouse test on accessibility through the Dev-tools on google chrome for both smart devices and desktops respectively.
+   ![Desktop](static/images/lh-1.png)
+   -----------------------------------
+   ![Mobile](static/images/lh-2.png)
+
 ## Deployment
 
 This project is deployed on Heroku. To deploy your own instance:
