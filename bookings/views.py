@@ -7,7 +7,8 @@ from .forms import BookingForm
 from django.utils import timezone
 from django.views.generic import UpdateView
 from django.urls import reverse_lazy
-
+from .utils import send_booking_email
+from .forms import CustomUserCreationForm
 
 
 # Create your views here.
@@ -17,12 +18,13 @@ def home(request):
 
 def register(request):
     if request.method == 'POST':
-        form = UserCreationForm(request.POST)
+        form = CustomUserCreationForm(request.POST)
         if form.is_valid():
             form.save()
+            messages.success(request, 'Registration successful! Please log in.')
             return redirect('login')
     else:
-        form = UserCreationForm()
+        form = CustomUserCreationForm()
     return render(request, 'registration/register.html', {'form': form})
 
 @login_required
@@ -32,14 +34,30 @@ def create_booking(request):
         if form.is_valid():
             booking = form.save(commit=False)
             booking.user = request.user
+            
             # Logic to assign a table based on availability
-            available_table = Table.objects.filter(capacity__gte=booking.guests).exclude(
+            available_table = Table.objects.filter(
+                capacity__gte=booking.guests
+            ).exclude(
                 booking__date=booking.date,
                 booking__time=booking.time
             ).first()
             if available_table:
                 booking.table = available_table
                 booking.save()
+
+                # Send confirmation email
+                subject = "Booking Confirmation"
+                message = (
+                    f"Dear {request.user.username},\n\n"
+                    f"Your booking has been confirmed:\n"
+                    f"Date: {booking.date}\n"
+                    f"Time: {booking.time}\n"
+                    f"Guests: {booking.guests}\n\n"
+                    f"We look forward to hosting you at Aduanepa Fie!"
+                )
+                send_booking_email(subject, message, request.user.email)
+
                 messages.success(request, 'Booking created successfully!')
                 return redirect('my_bookings')
             else:
@@ -55,8 +73,19 @@ def my_bookings(request):
 
 @login_required
 def cancel_booking(request, booking_id):
-    booking = Booking.objects.get(id=booking_id, user=request.user)
+    booking = get_object_or_404(Booking, id=booking_id, user=request.user)
     if request.method == 'POST':
+        # Send cancellation email
+        subject = "Booking Cancellation"
+        message = (
+            f"Dear {request.user.username},\n\n"
+            f"Your booking has been cancelled:\n"
+            f"Date: {booking.date}\n"
+            f"Time: {booking.time}\n\n"
+            f"We hope to see you again at Aduanepa Fie!"
+        )
+        send_booking_email(subject, message, request.user.email)
+
         booking.delete()
         messages.success(request, 'Booking cancelled successfully!')
         return redirect('my_bookings')

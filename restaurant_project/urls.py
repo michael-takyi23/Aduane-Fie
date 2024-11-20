@@ -22,6 +22,7 @@ from django.urls import path, include
 
 from django.conf.urls import handler404, handler500
 from django.shortcuts import render
+from django.views.generic import TemplateView
 
 # view for the error page defined
 def custom_error_page(request, exception=None):
@@ -31,6 +32,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('bookings.urls')),
     path('accounts/', include('django.contrib.auth.urls')),
+    path('robots.txt', TemplateView.as_view(template_name="robots.txt", content_type="text/plain")),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
